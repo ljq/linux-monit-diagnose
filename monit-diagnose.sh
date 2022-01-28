@@ -10,7 +10,7 @@
 # script version
 CLI_VERSION="1.0.0"
 
-# color green
+# Terminal color 
 GREEN_COLOR="\033[32m"
 CYAN_COLOR="\033[36m"
 YELLOW_COLOR="\033[43;37m"
@@ -19,7 +19,7 @@ GREEN_BG_COLOR="\033[47;42m"
 CYAN_BG_COLOR="\033[47;46m"
 RES="\033[0m"
 
-#
+# Help　info
 HELP_INFO=$(
     cat <<EOF
 [helptext]
