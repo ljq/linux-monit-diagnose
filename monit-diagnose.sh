@@ -252,12 +252,12 @@ esac
 
 # command check
 cmds=("netstat" "awk" "cat" "whiptail" "nginx")
-#for cmd in "${cmds[@]}"; do
-#  type ${cmd} >/dev/null 2>&1 || {
-#      echo >&2 "[Warning] ${cmd} is not found. Please install it and try again.\n"
-#      exit 1
-#  }
-#done
+for cmd in "${cmds[@]}"; do
+  type ${cmd} >/dev/null 2>&1 || {
+      echo >&2 "[Warning] ${cmd} is not found. Please install it and try again.\n"
+      exit 1
+  }
+done
 
 mainmenu ${select_cmd_list[@]}
 
