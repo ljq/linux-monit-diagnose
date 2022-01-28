@@ -10,12 +10,10 @@
 # script version
 CLI_VERSION="1.0.0"
 
-# Terminal color 
-GREEN_COLOR="\033[32m"
+# Terminal color
 CYAN_COLOR="\033[36m"
 YELLOW_COLOR="\033[43;37m"
 RED_COLOR="\033[31m"
-GREEN_BG_COLOR="\033[47;42m"
 CYAN_BG_COLOR="\033[47;46m"
 RES="\033[0m"
 
@@ -79,7 +77,9 @@ function mainmenu() {
     PS3='请选择服务: '
     options=($@)
     select opt in "${options[@]}"; do
+        echo -e "${CYAN_BG_COLOR}"
         submenu_${opt} ${sub_os_list[@]}
+        echo -e "${RES}"
         break
     done
 }
@@ -253,10 +253,10 @@ esac
 # command check
 cmds=("netstat" "awk" "cat" "whiptail" "nginx")
 for cmd in "${cmds[@]}"; do
-  type ${cmd} >/dev/null 2>&1 || {
-      echo >&2 "[Warning] ${cmd} is not found. Please install it and try again.\n"
-      exit 1
-  }
+    type ${cmd} >/dev/null 2>&1 || {
+        echo >&2 -e "${YELLOW_COLOR}[Warning] ${cmd} is not found. Please install it and try again.${RES}\n"
+        exit 1
+    }
 done
 
 mainmenu ${select_cmd_list[@]}
