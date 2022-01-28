@@ -1,4 +1,4 @@
-# Linux Monitor State Script
+# Linux Monitor State Usual Server Diagnosis Script
 
 #### Usual server monitoring statistics script
 

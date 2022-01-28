@@ -1,6 +1,6 @@
-# Linux Monitor State Script
+# Linux Monitor State Usual Server Diagnosis Script
 
-#### 常用服务器监控统计脚本
+#### 常用服务器监控诊断统计脚本
 
 [English Document](README.md)
 
