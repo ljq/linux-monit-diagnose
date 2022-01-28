@@ -1,4 +1,4 @@
-# monit-state 服务器监控统计脚本
+# Linux Monitor State 服务器监控统计脚本
 
 
 ###### OS
