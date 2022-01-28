@@ -1,5 +1,8 @@
-# Linux Monitor State 服务器监控统计脚本
+# Linux Monitor State Script
 
+#### 常用服务器监控统计脚本
+
+[English Document](README.md)
 
 ###### OS
 

@@ -1,4 +1,6 @@
-# Linux Monitor State server monitoring statistics script
+# Linux Monitor State Script
+
+#### Usual server monitoring statistics script
 
 [简体中文](README.zh-CN.md)
 
