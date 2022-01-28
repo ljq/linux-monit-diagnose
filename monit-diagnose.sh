@@ -77,7 +77,7 @@ function mainmenu() {
     PS3='请选择服务: '
     options=($@)
     select opt in "${options[@]}"; do
-        echo -e "${CYAN_BG_COLOR}"
+        echo -e "${CYAN_BG_COLOR}\n"
         submenu_${opt} ${sub_os_list[@]}
         echo -e "${RES}"
         break
